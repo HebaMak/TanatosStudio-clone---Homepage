@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*.selector {color:var(--mainColor);}*/
+:root {
+    --mainColor:#f7600e;
+    --headers: #3b434c;
+    --p: #4d5258;
+    --overlay: rgba(49,55,61,.9);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* start framework */
+.tables {
+    height: 100%;
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.text-center {
+    text-align: center ;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-color {
+    color:var(--mainColor);
+}
+
+.main-background {
+    background-color: var(--mainColor);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay);
+}
+
+::-webkit-input-placeholder { font-size: .9em; font-weight: normal;}
+::-moz-placeholder { font-size: .9em; font-weight: normal;} 
+::-ms-input-placeholder { font-size: .9em; font-weight: normal;} 
+input:-moz-placeholder { font-size: .9em; font-weight: normal;}
+/* end framework */
+
+
+/* start header */
+.headers{
+    background: url('../img/header.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.headers .navbars {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.headers .navbars .logo {
+    font-size: 24px;
+}
+
+.headers .navbars .links {
+    float: right;
+    z-index: 2;
+    position: relative;
+}
+
+.headers .navbars .menu {
+    position: fixed;
+    left: 53%;
+    transform: translateX(-50%);
+    top: -100px;
+    border-radius:  0 0 20px 20px ;
+    width: 800px;
+    padding:20px 50px;
+    transition: all .9s ease-in-out;
+    background-color:#30363bd7;
+    z-index: 9;
+}
+
+.headers .navbars .menu.showMenu {
+    top: 0;
+}
+
+.headers .navbars .menu li {
+    display: inline-block;
+    margin-right: 40px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.headers .navbars .menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.headers .navbars .menu li:first-of-type {
+    margin-left: 20px;
+}
+
+.headers .navbars .menu li:last-of-type {
+    margin-right: 0px;
+}
+
+.headers .navbars .menu li a:hover ,
+.headers .navbars .menu li.active a {
+    color: var(--mainColor);
+}
+
+.headers .navbars .links i {
+    margin-left: 5px;
+    padding: 5px;
+    color: var(--mainColor);
+    border-radius: 5px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.headers .intro h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 50px;
+    word-spacing: 5px;
+}
+
+.headers .intro p {
+    margin: 15px auto 40px;
+    line-height: 1.9;
+    font-size: 20px;
+    color: #e2e2e2;
+    width: 75%;
+    ;
+}
+
+.headers .buttons button {
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 14px;
+    color: #fff ;
+    border: 1px solid #909090;
+    margin:0 8px;
+    border-radius:10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.headers .buttons button:hover {
+    background-color: var(--mainColor);
+    color: #fff;
+    border: 1px solid var(--mainColor);;
+}
+
+.headers .arrow {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #dad4d4;;
+    border: 1px solid #909090;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    line-height: 33px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.headers .arrow:hover {
+    border:1px solid var(--mainColor);
+    color: var(--mainColor);
+} 
+/* end header */
+
+
+/* start features */
+.fearutes {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.fearutes .box {
+    float: left;
+    width: calc(91%/4);
+}
+
+.fearutes .box:not(:last-of-type) {
+    margin-right: 3%;
+}
+
+.fearutes .box i {
+    margin-bottom: 50px;
+    border: 1px solid #abacaf;
+    color: var(--mainColor);
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.fearutes .box i:hover {
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.fearutes .box h3 {
+    color: var(--headers);
+    font-weight: normal;
+}
+
+.fearutes .box p {
+    color: var(--p);
+    line-height: 1.7;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+/* end features */
+
+
+/* start subscribe */
+.subscribe {
+    background: url('../img/subscribe.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.subscribe form {
+    padding: 100px 0;
+    margin: auto;
+    text-align: center;
+}
+
+.subscribe form input[type="email"] {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 15px;
+    border: 1px solid rgb(49,55,61);
+}
+
+.subscribe form button {
+    width: 250px;
+    margin-left: 20px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    background-color: var(--mainColor) ;
+    border: 1px solid var(--mainColor);
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.subscribe form button:hover {
+    background-color: transparent;
+}
+/* end subscribe */
+
+/* start our work */
+.ourWork {
+    padding: 50px 0;
+}
+
+.ourWork h2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.ourWork h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    color: var(--p);
+    line-height: 1.7;
+    margin: 20px auto 40px;
+    width: 50%;
+}
+
+.ourWork .itemBox {
+    overflow: hidden;
+}
+
+.ourWork .itemBox .item {
+    float: left;
+    width: calc(95.5%/3);
+    margin-right: 1.5%;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourWork .itemBox .item .overlay {
+    background-color: var(--mainColor) ;
+    color: #fff;
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -101%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 35px 30px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .7s ease-in-out;
+    cursor: pointer;
+}
+
+.ourWork .itemBox .item:hover .overlay {
+    top: 0;
+}
+
+.ourWork .itemBox .item .overlay h4 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.ourWork .itemBox .item .overlay button {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    width: 180px;
+    height: 40px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.ourWork .itemBox .item .overlay button:hover {
+    color: var(--mainColor);
+    background-color: #fff;
+}
+
+.ourWork .itemBox .item:nth-of-type(3) ,
+.ourWork .itemBox .item:nth-of-type(6) ,
+.ourWork .itemBox .item:nth-of-type(9) {
+    margin-right: 0;
+}
+
+.ourWork .itemBox .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ourWork .showMore {
+    background-color: transparent;
+    padding: 10px;
+    width: 180px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.ourWork .showMore:hover {
+    background-color: var(--mainColor);
+    color: #fff;
+    border: 1px solid var(--mainColor)
+}
+/* end our work */
+
+
+/* start testimonial */
+.testimonial {
+    background: url('../img/testimonials.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.testimonial .client {
+    padding: 100px 0;
+    color: rgb(226, 222, 222);
+    font-size: 20px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.testimonial .client p {
+    font-style: italic;
+    line-height: 2;
+    margin: 20px auto 40px;
+}
+
+.testimonial span {
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.testimonial span:hover {
+    color: var(--mainColor);
+}
+
+.testimonial i {
+    position: absolute;
+    color: rgb(226, 222, 222);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.testimonial i:hover {
+    color: var(--mainColor);
+}
+
+.testimonial .leftArrow {
+    left: 200px;
+}
+
+.testimonial .rightArrow {
+    right: 200px;
+}
+/* end testimonial */
+
+
+/* start our team */
+.ourTeam {
+    padding: 50px 0;
+}
+
+.ourTeam h2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.ourTeam h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    color: var(--p);
+    line-height: 1.7;
+    margin: 20px auto 80px;
+    width: 50%;
+}
+
+.ourTeam .theTeam {
+    overflow: hidden;
+}
+
+.ourTeam .theTeam .person {
+    float: left;
+    width : calc(91%/4);
+    color: #9da1a5;
+    -webkit-transform: all .5s ease-in-out;
+    -moz-transform: all .5s ease-in-out;
+    transform: all .5s ease-in-out;
+}
+
+.ourTeam .theTeam .person:not(:last-of-type) {
+    margin-right: 3%;
+}
+
+.ourTeam .theTeam .person img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    filter: gray;
+    border-bottom: 3px solid transparent;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.ourTeam .theTeam .person h5 {
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.ourTeam .theTeam .person .socialIcons i {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #9da1a5;
+}
+
+.ourTeam .theTeam .person p {
+    margin: 15px 0 ;
+    line-height: 1.7;
+}
+
+.ourTeam .theTeam .person:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    border-bottom: 3px solid var(--mainColor);
+}
+
+.ourTeam .theTeam .person:hover h5 {
+    color: var(--headers);
+}
+
+.ourTeam .theTeam .person:hover .fa-facebook {
+    background-color : #3b5998;
+}
+
+.ourTeam .theTeam .person:hover .fa-twitter {
+    background-color: #1da1f2;
+}
+
+.ourTeam .theTeam .person:hover .fa-google-plus {
+    background-color: #dd4b39;
+}
+
+.ourTeam .theTeam .person:hover p {
+    color: var(--p);
+}
+/* end our team */
+
+
+/* start contact form */
+.contactForm {
+    background: url(../img/contactForm.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contactForm .overlay {
+    padding: 70px 0 ;
+    color: #fff;
+}
+
+.contactForm h2 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.contactForm  p { /* ~ next to 'this style for p which is next h2'*/
+    color: var(--p);
+    line-height: 1.7;
+    margin: 20px auto 90px;
+    color: #fff;
+}
+
+.contactForm form {
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contactForm form input {
+    width: 310px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    display: inline-block;
+    border: 1px solid #333;
+    text-indent: 20px;
+}
+
+.contactForm form input:first-of-type {
+    margin-right: 20px;
+}
+
+.contactForm form textarea {
+    margin-top: 40px;
+    width: 640px;
+    height: 230px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    padding: 20px;
+    resize: none;
+}
+
+.contactForm form button {
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    border: 1px solid var(--mainColor);
+    position: absolute;
+    left: 81px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.contactForm form button:hover {
+    background: transparent;
+}
+
+.contactForm form .formIcons {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 81px;
+}
+
+.contactForm form .formIcons i {
+    margin-left: 5px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.contactForm form .formIcons i:hover {border: 1px solid #fff}
+.contactForm form .formIcons .facebook {
+    background-color : #3b5998;
+}
+
+.contactForm form .formIcons .twitter {
+    background-color: #1da1f2;
+}
+
+.contactForm form .formIcons .google {
+    background-color: #dd4b39;
+}
+
+.contactForm form .formIcons .dribble {
+    background-color : #ff72a5;
+}
+
+.contactForm form .formIcons .behance {
+    background-color : #1769ff
+}
+/* end contacy form */
+
+
+/* start footer */
+.footer {
+    background-color: #3b434c ;
+    color: rgb(230, 224, 224);
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.footer p {
+    display: inline-block;
+    word-spacing: 2px;
+    font-size: 15px;
+    padding-top: 18px;
+}
+
+.footer p:first-of-type {
+    float: left;
+}
+
+.footer p:last-of-type {
+    float: right;
+}
+
+.footer p span:first-of-type {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer p span:last-of-type {
+    font-weight: 500;
+    color: rgb(250, 1, 1);
+    font-size: 18px;
+}
+/* end footer */

@@ -1,0 +1,642 @@
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+::-webkit-input-placeholder { font-size: .7em; font-weight: normal;}
+::-moz-placeholder { font-size: .7em; font-weight: normal;} 
+::-ms-input-placeholder { font-size: .7em; font-weight: normal;} 
+input:-moz-placeholder { font-size: .7em; font-weight: normal;}
+
+/* start header */
+.headers .navbars .links {
+    float: right;
+    z-index: 2;
+    position: relative;
+    right: 35px;
+}
+
+.headers .navbars .links i {
+    right: 12px;
+}
+
+.headers .navbars .menu {
+    top: 0px;
+    left: 130%;
+    height: 100vh;
+    width: 250px;
+    background-color: #30363bed;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+    padding: 90px 30px 0 ;
+    transition: all .9s ease-in-out;
+    display: block;
+}
+
+.headers .navbars .menu.showMenu {
+    left: 90%; 
+}
+
+.headers .navbars .menu li {
+    margin: 5px ;
+    padding: 5px;
+    display: block;
+}
+
+.headers .navbars .menu li:first-of-type {
+    margin-left: 5px;
+}
+
+.headers .navbars .links i {
+    margin-left: 5px;
+}
+
+.headers .intro h1 {
+    font-size: 40px;
+}
+/* end header */
+
+
+/* start features */
+.fearutes .box {
+    width: 40%;
+    margin: 0 5%;
+}
+
+.fearutes .box i {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+}
+
+.fearutes .box h3 {
+    font-size: 26px;
+}
+
+.fearutes .box p {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+/* end features */
+
+
+/* start subscribe */
+.subscribe form input[type="email"] {
+    width: 290px;
+}
+
+.subscribe form button {
+    width: 150px;
+}
+/* end subscribe */
+
+/* start our work */
+.ourWork h2 {
+    font-size: 30px;
+}
+
+.ourWork h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 90%;
+    font-size: 16px;
+}
+
+.ourWork .itemBox .item {
+
+    width: 80%;
+    margin: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourWork h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    font-size: 18px;
+}
+
+.ourWork .itemBox .item:nth-of-type(3) ,
+.ourWork .itemBox .item:nth-of-type(6) {
+    margin-right: 5%;
+}
+
+.ourWork .itemBox .item:last-of-type{
+    margin-left: 10%;
+}
+/* end our work */
+
+
+/* start testimonial */
+.testimonial .client p {
+    width: 80%;
+    font-size: 16px;
+}
+
+.testimonial span {
+    font-size: 20px;
+}
+
+.testimonial i {
+    font-size: 22px
+}
+
+.testimonial .leftArrow {
+    left: 20px;
+}
+
+.testimonial .rightArrow {
+    right: 20px;
+}
+/* end testimonial */
+
+
+/* start our team */
+.ourTeam h2  { 
+    font-size: 30px;
+}
+
+.ourTeam h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    font-size: 18px;
+    margin: 20px auto 40px;
+}
+
+.ourTeam .theTeam .person {
+    width : 40%;
+    margin: 5%;
+}
+/* end our team */
+
+
+/* start contact form */
+.contactForm  p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    margin: 20px auto 40px;
+}
+
+.contactForm form {
+    width: 470px;
+}
+
+.contactForm form input {
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.contactForm form input:first-of-type {
+    margin-right: 5px;
+}
+
+.contactForm form textarea {
+    width: 470px;
+}
+
+.contactForm form button {
+    width: 140px;
+    height: 35x;
+    left: 1px;
+}
+
+.contactForm form .formIcons {
+    right: 1px;
+}
+.contactForm form .formIcons i {
+    margin-left: 3px;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+/* end contacy form */
+
+
+/* start footer */
+.footer {
+    height: 60px;
+}
+
+.footer p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer p span:first-of-type {
+    font-size: 13.5px;
+}
+/* end footer */
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+::-webkit-input-placeholder { font-size: .8em; font-weight: normal;}
+::-moz-placeholder { font-size: .8em; font-weight: normal;} 
+::-ms-input-placeholder { font-size: .8em; font-weight: normal;} 
+input:-moz-placeholder { font-size: .8em; font-weight: normal;}
+
+/* start header */
+.headers .navbars .menu {
+    top: 0px;
+    left: 125%;
+    height: 100vh;
+    width: 250px;
+    background-color: #30363bed;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+    padding: 90px 30px 0 ;
+    transition: all .9s ease-in-out;
+    display: block;
+}
+
+.headers .navbars .menu.showMenu {
+    left: 90%; 
+}
+
+.headers .navbars .menu li {
+    margin: 5px ;
+    padding: 5px;
+    display: block;
+}
+
+.headers .navbars .menu li:first-of-type {
+    margin-left: 5px;
+}
+
+.headers .navbars .links i {
+    margin-left: 5px;
+}
+/* end header */
+
+/* start features */
+.fearutes .box {
+    width: 40%;
+    margin: 0 5%;
+}
+
+.fearutes .box p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+/* end features */
+
+
+/* start subscribe */
+.subscribe form input[type="email"] {
+    width: 300px;
+}
+
+.subscribe form button {
+    width: 150px;
+}
+/* end subscribe */
+
+
+/* start our work */
+.ourWork .itemBox .item {
+    width: 80%;
+    margin: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourWork h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    font-size: 18px;
+}
+
+.ourWork .itemBox .item:nth-of-type(3) ,
+.ourWork .itemBox .item:nth-of-type(6) {
+    margin-right: 5%;
+}
+
+.ourWork .itemBox .item:last-of-type{
+    margin-left: 10%;
+}
+/* end our work */
+
+/* start testimonial */
+.testimonial .client p {
+    width: 85%;
+    font-size: 17px;
+}
+
+.testimonial span {
+    font-size: 20px;
+}
+
+.testimonial i {
+    font-size: 22px
+}
+
+.testimonial .leftArrow {
+    left: 30px;
+}
+
+.testimonial .rightArrow {
+    right: 30px;
+}
+/* end testimonial */
+
+
+/* start our team */
+.ourTeam h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    font-size: 18px;
+    margin: 20px auto 40px;
+}
+
+.ourTeam .theTeam .person {
+    width : 40%;
+    margin: 5%;
+}
+/* end our team */
+
+
+/* start contact form */
+.contactForm  p { /* ~ next to 'this style for p which is next h2'*/
+    width: 65%;
+}
+
+.contactForm form {
+    width: 500px;
+}
+
+.contactForm form input {
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+.contactForm form input:first-of-type {
+    margin-right: 10px;
+}
+
+.contactForm form textarea {
+    width: 500px;
+}
+
+.contactForm form button {
+    width: 140px;
+    height: 35x;
+    left: 1px;
+}
+
+.contactForm form .formIcons {
+    right: 1px;
+}
+.contactForm form .formIcons i {
+    margin-left: 3px;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+/* end contacy form */
+
+
+/* start footer */
+.footer p {
+    font-size: 14px;
+}
+/* end footer */
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+::-webkit-input-placeholder { font-size: .8em; font-weight: normal;}
+::-moz-placeholder { font-size: .8em; font-weight: normal;} 
+::-ms-input-placeholder { font-size: .8em; font-weight: normal;} 
+input:-moz-placeholder { font-size: .8em; font-weight: normal;}
+
+    /* start header */
+.headers .navbars .menu {
+    top: 0px;
+    left: 120%;
+    height: 100vh;
+    width: 250px;
+    background-color: #30363bed;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+    padding: 90px 30px 0 ;
+    transition: all .9s ease-in-out;
+    display: block;
+}
+
+.headers .navbars .menu.showMenu {
+    left: 90%; 
+}
+
+.headers .navbars .menu li {
+    margin: 5px ;
+    padding: 5px;
+    display: block;
+}
+
+.headers .navbars .menu li:first-of-type {
+    margin-left: 5px;
+}
+
+.headers .navbars .links i {
+    margin-left: 5px;
+}
+/* end header */
+
+
+/* start features */
+.fearutes .box {
+    width: 40%;
+    margin: 0 5%;
+}
+
+.fearutes .box p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+/* end features */
+
+
+/* start subscribe */
+.subscribe form input[type="email"] {
+    width: 400px;
+}
+
+.subscribe form button {
+    width: 200px;
+}
+/* end subscribe */
+
+
+/* start our work */
+.ourWork .itemBox .item {
+    width: 40%;
+    margin: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ourWork h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    font-size: 18px;
+}
+
+.ourWork .itemBox .item .overlay {
+    padding: 18px 20px;
+}
+
+.ourWork .itemBox .item .overlay h4 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.ourWork .itemBox .item .overlay p {
+    font-size: 15px;
+}
+
+.ourWork .itemBox .item .overlay button {
+    width: 160px;
+    height: 35px;
+    margin-top: 0;
+}
+
+.ourWork .itemBox .item:nth-of-type(3) ,
+.ourWork .itemBox .item:nth-of-type(6) {
+    margin-right: 5%;
+}
+
+.ourWork .itemBox .item:last-of-type{
+    margin-left: 30%;
+}
+/* end our work */
+
+
+/* start testimonial */
+.testimonial .client p {
+    width: 85%;
+    font-size: 17px;
+}
+
+.testimonial span {
+    font-size: 20px;
+}
+
+.testimonial i {
+    font-size: 26px
+}
+
+.testimonial .leftArrow {
+    left: 45px;
+}
+
+.testimonial .rightArrow {
+    right: 45px;
+}
+/* end testimonial */
+
+
+/* start our team */
+.ourTeam h2 ~ p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+    font-size: 18px;
+    margin: 20px auto 40px;
+}
+
+.ourTeam .theTeam .person {
+    width : 40%;
+    margin: 5%;
+}
+/* end our team */
+
+
+/* start contact form */
+.contactForm  p { /* ~ next to 'this style for p which is next h2'*/
+    width: 80%;
+}
+/* end contacy form */
+
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+::-webkit-input-placeholder { font-size: .8em; font-weight: normal;}
+::-moz-placeholder { font-size: .8em; font-weight: normal;} 
+::-ms-input-placeholder { font-size: .8em; font-weight: normal;} 
+input:-moz-placeholder { font-size: .8em; font-weight: normal;}
+    
+/* start header */
+.headers .navbars .menu {
+    top: 0px;
+    left: 120%;
+    height: 100vh;
+    width: 250px;
+    background-color: #30363bd7;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+    padding: 90px 30px 0 ;
+    transition: all .9s ease-in-out;
+    display: block;
+}
+
+.headers .navbars .menu.showMenu {
+    left: 90%; 
+}
+
+.headers .navbars .menu li {
+    margin: 5px ;
+    padding: 5px;
+    display: block;
+}
+
+.headers .navbars .menu li:first-of-type {
+    margin-left: 5px;
+}
+
+.headers .navbars .links i {
+    margin-left: 5px;
+}
+/* end header */
+
+
+/* start our work */
+.ourWork .itemBox .item .overlay {
+    padding: 20px 30px;
+}
+
+.ourWork .itemBox .item .overlay h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.ourWork .itemBox .item .overlay p {
+    font-size: 16px;
+}
+
+.ourWork .itemBox .item .overlay button {
+    width: 160px;
+    height: 35px;
+    margin-top: 0;
+}
+/* end our work */
+
+/* start testimonials */
+.testimonial .leftArrow {
+    left: 65px;
+}
+
+.testimonial .rightArrow {
+    right: 65px;
+}
+/* end testimonials */
+
+}
+
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {  }
